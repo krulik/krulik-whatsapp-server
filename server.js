@@ -15,7 +15,7 @@ app.use(
   //enable cross-origin requests
   cors({
     // origin: "http://localhost:3000",
-    origin: "https://krulik-whatsapp.herokuapp.com/",
+    origin: "https://krulik-whatsapp.herokuapp.com",
     credentials: true
   })
 );
