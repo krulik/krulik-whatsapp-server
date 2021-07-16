@@ -14,8 +14,7 @@ app.listen(process.env.PORT || 8080, () => console.log("Our server is listening 
 app.use(
   //enable cross-origin requests
   cors({
-    // origin: "http://localhost:3000",
-    origin: "https://krulik-whatsapp.herokuapp.com",
+    origin: process.env.CLIENT_URL,
     credentials: true
   })
 );
