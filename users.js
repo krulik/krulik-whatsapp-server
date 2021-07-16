@@ -46,6 +46,7 @@ module.exports.getById = (req, res) => {
 };
 
 module.exports.getLoggedUserByCookie = (req, res) => {
+  console.log('req.cookies', req.cookies);
   getUserById(req.cookies.userId, res);
 };
 
